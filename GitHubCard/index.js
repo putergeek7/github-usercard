@@ -27,11 +27,9 @@
 const followersArray = ['DustinThewind505', 'Vrndavan', 'naj10000'];
 
 // followersArray.forEach(function(item, index) {
-
-// 	cards.appendChild(item, index)
-
-// 	)
-// 	// console.log(item, index);
+// 	cards.appendChild(item);
+// 	console.log(item, index);
+// });
 
 /* Step 3: Create a function that accepts a single object as its only argument,
           Using DOM methods and properties, create a component that will return the following DOM element:
@@ -78,7 +76,7 @@ const followersArray = ['DustinThewind505', 'Vrndavan', 'naj10000'];
 </div> */
 // }
 
-axios
+const a = axios
 	.get('https://api.github.com/users/putergeek7')
 	.then(response => {
 		// console.log(response.data.message);
@@ -92,7 +90,7 @@ axios
 		// console.log('the data was not returned' error)
 	});
 
-axios
+const b = axios
 	.get('https://api.github.com/users/putergeek7/followers ')
 	.then(response => {
 		// console.log(response.data.message);
